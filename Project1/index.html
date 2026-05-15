@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nature Photography</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<style>
+
+body{
+background:whitesmoke;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+.top{
+background:green;
+color:white;
+text-align:center;
+padding:5px;
+font-weight:bold;
+}
+
+.navbar-brand{
+font-weight:bold;
+color:darkgreen;
+}
+
+.hero{
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+url('https://images.unsplash.com/photo-1501785888041-af3ef285b470');
+background-size:cover;
+background-position:center;
+color:white;
+padding:100px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:50px;
+font-weight:bold;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:20px;
+}
+
+.card{
+overflow:hidden;
+border:none;
+border-radius:10px;
+transition:0.5s;
+}
+
+.card img{
+height:220px;
+object-fit:cover;
+transition:0.5s;
+}
+
+.card:hover img{
+transform:scale(1.1);
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px gray;
+}
+
+.card-body{
+text-align:center;
+}
+
+.about img{
+height:300px;
+object-fit:cover;
+}
+
+footer{
+background:green;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:30px;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="top">
+Welcome to Nature Photography
+</div>
+
+<nav class="navbar navbar-expand-lg bg-light px-3 shadow-sm">
+
+<a class="navbar-brand" href="#">Nature World</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav me-auto">
+<li class="nav-item">
+<a class="nav-link active" href="#">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Gallery</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Contact</a>
+</li>
+</ul>
+
+<form class="d-flex">
+<input class="form-control me-2" type="search" placeholder="Search">
+<button class="btn btn-success">Search</button>
+</form>
+
+</div>
+
+</nav>
+
+<section class="hero" data-aos="fade-down">
+
+<h1>Nature Photography</h1>
+
+<p>
+Explore Beautiful Forests, Mountains, Waterfalls and Wildlife
+</p>
+
+<button class="btn btn-warning btn-lg">
+Explore More
+</button>
+
+</section>
+
+<section class="container my-5">
+
+<div class="text-center mb-4" data-aos="fade-up">
+<h2>Nature Gallery</h2>
+<p>Beautiful moments captured from nature</p>
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-3" data-aos="flip-left">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" class="card-img-top">
+
+<div class="card-body">
+
+<h5>Forest View</h5>
+
+<p>Beautiful green forest scenery.</p>
+
+<a href="#" class="btn btn-success">
+View
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3" data-aos="flip-right">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" class="card-img-top">
+
+<div class="card-body">
+
+<h5>Mountain</h5>
+
+<p>Peaceful mountain landscape.</p>
+
+<a href="#" class="btn btn-success">
+View
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3" data-aos="flip-up">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e" class="card-img-top">
+
+<div class="card-body">
+
+<h5>Waterfall</h5>
+
+<p>Fresh and natural waterfall beauty.</p>
+
+<a href="#" class="btn btn-success">
+View
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3" data-aos="flip-left">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e" class="card-img-top">
+
+<div class="card-body">
+
+<h5>Wildlife</h5>
+
+<p>Amazing wildlife photography.</p>
+
+<a href="#" class="btn btn-success">
+View
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="container my-5 about">
+
+<div class="row align-items-center">
+
+<div class="col-md-6" data-aos="fade-right">
+
+<h2>About Nature</h2>
+
+<p>
+Nature gives peace, fresh air, and beauty to our lives.
+Nature photography helps us capture wonderful moments of forests, rivers, mountains, and animals.
+</p>
+
+<p>
+Exploring nature refreshes the mind and brings happiness to everyone.
+</p>
+
+<button class="btn btn-success">
+Read More
+</button>
+
+</div>
+
+<div class="col-md-6" data-aos="fade-left">
+
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+class="img-fluid rounded shadow">
+
+</div>
+
+</div>
+
+</section>
+
+<footer data-aos="fade-up">
+
+Nature World © 2026 | All Rights Reserved
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+
+AOS.init({
+duration:1000,
+once:true
+});
+
+</script>
+
+</body>
+</html>
